@@ -1,0 +1,161 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font: 15px;
+}
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #dedede;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.Layar-Dalam {
+  width: 1200px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav .Logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+nav .Logo img {
+  vertical-align: middle;
+  width: 120px;
+}
+
+nav .Menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .Menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .Menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*pengaturan header*/
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+header .intro {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.tombol {
+  background-color: blue;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 50%;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 4px;
+  background-color: #fff;
+}
+@media screen and (max-width: 991.98px) {
+  .Layar-Dalam {
+    width: 90%;
+  }
+  nav .Menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav .Menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+  nav .Menu ul li a {
+    color: #333;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+}

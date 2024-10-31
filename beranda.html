@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pariwisata Indonesia</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      header {
+        background-image: url("https://example.com/header-image.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 50px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 3em;
+        margin: 0;
+      }
+      nav {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+      .container {
+        padding: 20px;
+      }
+      .destination {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .destination-item {
+        flex: 1 1 calc(33.333% - 20px);
+        background-color: #f4f4f4;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      .destination-item img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .destination-item h3 {
+        margin-top: 10px;
+        color: #333;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Pariwisata Indonesia</h1>
+      <p>Jelajahi keindahan alam, budaya, dan pesona Indonesia.</p>
+    </header>
+
+    <nav>
+      <a href="#destinasi">Destinasi</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section class="container" id="destinasi">
+      <h2>Destinasi Wisata Populer</h2>
+      <div class="destination">
+        <div class="destination-item">
+          <img src="https://example.com/bali.jpg" alt="Bali" />
+          <h3>Bali</h3>
+          <p>
+            Pulau Dewata dengan pantai-pantai yang indah dan budaya yang kaya.
+          </p>
+        </div>
+        <div class="destination-item">
+          <img src="https://example.com/raja-ampat.jpg" alt="Raja Ampat" />
+          <h3>Raja Ampat</h3>
+          <p>Surga bawah laut dengan keragaman biota laut yang memukau.</p>
+        </div>
+        <div class="destination-item">
+          <img src="https://example.com/yogyakarta.jpg" alt="Yogyakarta" />
+          <h3>Yogyakarta</h3>
+          <p>Kota budaya dengan Candi Borobudur dan Keraton Yogyakarta.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Pariwisata Indonesia | Jelajahi Keindahan Nusantara</p>
+    </footer>
+  </body>
+</html>

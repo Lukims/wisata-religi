@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=- `, initial-scale=1.0" />
+    <title>Wisata Religi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="Layar-Dalam">
+      <div class="Logo">
+        <a href=""><img src="asset/logo pariwisata.png" class="putih" /></a>
+      </div>
+      <div class="Menu">
+        <a href="#" class="tombol-menu">
+        <span class="garis"></span>
+        <span class="garis"></span>
+        <span class="garis"></span>
+        </a>
+        <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #3498db;
+            height: auto;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .form-group button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .form-group button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kontak Kami</h1>
+        <p>Hubungi kami untuk informasi lebih lanjut</p>
+    </header>
+
+    <!-- Bagian Kontak di Bawah Header -->
+    <section class="container">
+        <h2>Formulir Kontak</h2>
+        <p>Isi formulir di bawah ini untuk mengirim pesan kepada kami. Kami akan merespon secepat mungkin.</p>
+
+        <form action="/submit-kontak" method="post">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Kirim Pesan</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kontak Kami | Terhubung dengan Kami untuk Informasi Lebih Lanjut</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
